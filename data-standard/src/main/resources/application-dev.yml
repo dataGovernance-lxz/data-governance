@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: dataStandard
+server:
+  port: 8081
+  servlet:
+    context-path: /dataStandard
+eureka:
+  client:
+    ###集群模式为true
+    register-with-eureka: true
+    ###是否检索服务信息
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7001/eureka/
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          timeout:
+            enable: false
+
