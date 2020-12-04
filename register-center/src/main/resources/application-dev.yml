@@ -2,11 +2,11 @@ spring:
   application:
     name: order
 server:
-  port: 8080
+  port: 7001
 eureka:
   client:
     ###集群模式为true
-    register-with-eureka: true
+    register-with-eureka: false
     ###是否检索服务信息
     fetch-registry: true
     serviceUrl:

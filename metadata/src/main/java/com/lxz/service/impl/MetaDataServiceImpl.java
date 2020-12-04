@@ -1,21 +1,20 @@
 package com.lxz.service.impl;
 
-import com.lxz.service.MetaDataService;
+import com.lxz.service.IMetaDataService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Service;
 
 /**
  * @author xlx
- * @desription:
+ * @desription:  元数据对外暴露接口
  */
 @Slf4j
-@RestController
-public class MetaDataServiceImpl implements MetaDataService {
+@Service
+public class MetaDataServiceImpl implements IMetaDataService {
+
 
     @Override
-    @GetMapping("/metadata")
     public String getMetaData() {
-        return "测试";
+        return "hello";
     }
 }
