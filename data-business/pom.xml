@@ -8,14 +8,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>metadata</module>
+        <module>data-standard</module>
+        <module>datasource</module>
+        <module>data-quality</module>
+    </modules>
+    <artifactId>data-business</artifactId>
 
-    <artifactId>data-standard</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.lxz</groupId>
-            <artifactId>api-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

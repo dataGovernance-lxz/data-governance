@@ -7,16 +7,13 @@
     <modules>
         <module>register-center</module>
         <module>api-service</module>
-        <module>metadata</module>
-        <module>data-standard</module>
         <module>common</module>
-        <module>datasource</module>
-        <module>data-quality</module>
+        <module>data-business</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.4.RELEASE</version>
+        <version>2.3.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lxz</groupId>
@@ -70,23 +67,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Hoxton.SR6</version>
+            <version>Hoxton.SR9</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
     </dependencies>
     </dependencyManagement>
-
-
-
-
-
-
-
-
-
-
-
 
 
 </project>
