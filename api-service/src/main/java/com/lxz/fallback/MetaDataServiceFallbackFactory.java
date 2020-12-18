@@ -14,9 +14,13 @@ import org.springframework.stereotype.Component;
 public class MetaDataServiceFallbackFactory implements FallbackFactory<MetaDataService> {
     @Override
     public MetaDataService create(Throwable throwable) {
-        return () -> {
-            log.error("查询元数据异常:", throwable);
-            return "";
-        };
+       return new MetaDataService() {
+           @Override
+
+           public String getMetaData() {
+               log.error("fail to get metaData,throwable:{}",throwable);
+               return "";
+           }
+       };
     }
 }

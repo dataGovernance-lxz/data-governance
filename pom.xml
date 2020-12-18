@@ -9,6 +9,7 @@
         <module>api-service</module>
         <module>common</module>
         <module>data-business</module>
+        <module>datagate-way</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,11 +25,6 @@
         <lombok-version>1.18.6</lombok-version>
     </properties>
     <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

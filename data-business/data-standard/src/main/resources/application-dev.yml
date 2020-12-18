@@ -24,4 +24,6 @@ feign:
         execution:
           timeout:
             enable: false
-
+logging:
+  level:
+    com.lxz.service.*: debug

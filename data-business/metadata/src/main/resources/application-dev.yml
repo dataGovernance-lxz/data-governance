@@ -2,7 +2,7 @@ spring:
   application:
     name: metadata
 server:
-  port: 8080
+  port: 8082
   servlet:
     context-path: /metadata
 eureka:
@@ -13,6 +13,7 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://127.0.0.1:7001/eureka/
+
 ribbon:
   ReadTimeout: 5000
   ConnectTimeout: 5000

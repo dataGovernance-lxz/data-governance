@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+      - id: metadata_routh
+        uri: http://localhost:8082
+        predicates:
+        - Path=/metadata/**
+server:
+  port: 9527
+eureka:
+  client:
+    ###集群模式为true
+    register-with-eureka: true
+    ###是否检索服务信息
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7001/eureka/
+
+
