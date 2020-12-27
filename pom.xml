@@ -10,8 +10,9 @@
         <module>common</module>
         <module>data-business</module>
         <module>datagate-way</module>
+        <module>config-center</module>
     </modules>
-    <parent>
+     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.6.RELEASE</version>

@@ -1,3 +1,26 @@
 spring:
-  profiles:
-    active: dev
+  application:
+    name: dataStandard
+server:
+  servlet:
+    context-path: /dataStandard
+  port: 8081
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          timeout:
+            enable: false
+logging:
+  level:
+    com.lxz.service.*: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,3 +1,27 @@
 spring:
-  profiles:
-    active: dev
+  application:
+    name: metadata
+server:
+  servlet:
+    context-path: /metadata
+  port: 8080
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          timeout:
+            enable: false
+logging:
+  level:
+    com.lxz.service.*: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
