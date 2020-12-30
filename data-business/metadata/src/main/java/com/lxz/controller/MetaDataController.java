@@ -17,7 +17,7 @@ public class MetaDataController {
 
     @Autowired
     private IMetaDataService iMetaDataService;
-    @Value("${dataSourceId}")
+    @Value("${da}")
     private String did;
 
     @GetMapping("/getMetadata")

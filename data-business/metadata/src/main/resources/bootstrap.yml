@@ -8,11 +8,12 @@ spring:
       config:
         server-addr: ${nacos.server-addr}
         file-extension: properties
-        namespace: bddf76b9-9c0d-4c4e-828d-da1cc30328fd
+        namespace: 045e3e88-1438-4a3b-8d41-ce6b3bc90484
         group: DEFAULT_GROUP
         ext-config:
           - data-id: jdbc.properties
             refresh: true
           - data-id: common.properties
             refresh: true
+
 
