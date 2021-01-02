@@ -2,6 +2,10 @@ nacos:
   server-addr: localhost:8848
 spring:
   cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
     nacos:
       discovery:
         server-addr: ${nacos.server-addr}
